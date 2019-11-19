@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>NPCAgencyWorld</title>
+        <script src="scripts/phaser.js" type="text/javascript"></script>
+        <script src="scripts/phaser-tilemap-plus.js" type="text/javascript"></script>
+        <script src="scripts/functions.js" type="text/javascript"></script>
+        <script src="scripts/jquery.js" type="text/javascript"></script>
+        <script src="scripts/lodash.min.js" type="text/javascript"></script>
+        <script src="scripts/jquery.js" type="text/javascript"></script>
+        <script src="scripts/lodash.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="scripts/phaser-input/build/phaser-input.js"></script>
+        <script type="text/javascript" src="scripts/GoTdatabase.js"></script>
+        <script type="text/javascript" src="scripts/PersonForm.js"></script>
+        
+        <script src="states/boot.js" type="text/javascript"></script>
+        <script src="states/intro.js" type="text/javascript"></script>
+        <script src="states/generator.js" type="text/javascript"></script>
+        <script src="states/preloader.js" type="text/javascript"></script>
+        <script src="states/world.js" type="text/javascript"></script>
+        <script src="states/outro.js" type="text/javascript"></script>    
+    </head>
+    <body>
+        <script type="text/javascript">
+        
+        var TopDownGame = TopDownGame || {};
+        var transparent = false;
+        var antialias = false;
+        TopDownGame.game = new Phaser.Game(800, 600, Phaser.CANVAS, '', this, transparent, antialias);
+
+        
+        TopDownGame.game.state.add("interface", TopDownGame.NPCAinterface);
+        TopDownGame.game.state.add("boot", TopDownGame.boot);
+        TopDownGame.game.state.add("intro", TopDownGame.intro);
+        TopDownGame.game.state.add("generator", TopDownGame.generator);
+        TopDownGame.game.state.add("preloader", TopDownGame.preloader);
+        TopDownGame.game.state.add("world", TopDownGame.world);
+        TopDownGame.game.state.add("npc01", TopDownGame.npc01);
+        TopDownGame.game.state.add("outro", TopDownGame.outro);
+            
+        TopDownGame.game.state.start('boot');
+
+        </script>  
+    </body>
+</html>

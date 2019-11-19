@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>ComplexNPC Web editor</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+
+<link rel="stylesheet" type="text/css" media="all" href="scripts/jsonform-master/opt/bootstrap.css">
+<script type="text/javascript" src="scripts/jsonform-master/jquery.min.js"></script>
+    <script>
+function openWin() {
+  window.open("game.html");
+}
+</script>
+</head>
+<body>
+	<p>Welcome to NPC Agency. A program designed to provide minor
+		characters for video games. Currently used with the Phaser2 engine.
+		(https://phaser.io/) To create a completely random character
+		just push the blue 'Saver' button. If you would like to adjusts some aspects
+		of the character, expand the accordions below and make some changes. The basic information is the most straight forward and
+		has details about where the person was born, how old he is, etc. The
+		traits affect which events a person might experience and their
+		description. The Eras section lets you influence the events in each
+		era to be more positive or negative. <strong>To play the game, create a character, copy the seed, click the 'open game' button and follow the instructions in the game.</strong>
+	
+    </p>
+    <form>
+  <input type="button" value="Open game" onclick="openWin()">
+</form>
+	<form id="form" action="#"></form>
+
+	<div id="res"></div>
+	<div id="inform"></div>
+
+    
+   
+	<script type="text/javascript" src="scripts/GoTdatabase.js"></script>
+	<script type="text/javascript" src="scripts/jsonform-master/underscore.js"></script>
+	<script type="text/javascript" src="scripts/jsonform-master/opt/jsv.js"></script>
+	<script type="text/javascript"
+		src="scripts/jsonform-master/opt/bootstrap-dropdown.js"></script> 
+	<script type="text/javascript" src="scripts/jsonform-master/jsonform.js"></script>  
+
+	<script type="text/javascript" src="scripts/InterfaceGen.js"></script>
+    <script type="text/javascript" src="scripts/jsonform-master/jquery.min.js"></script>
+</body>
+
+</html>
